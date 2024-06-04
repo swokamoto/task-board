@@ -14,7 +14,7 @@ function generateTaskId() {
 
 // Todo: create a function to create a task card
 function createTaskCard(task) {
-    let card = $("<div>").addClass("card").attr("id", task.id);
+    let card = $("<div>").addClass("card task-card").attr("id", task.id);
     let cardBody = $("<div>").addClass("card-body");
     let cardTitle = $("<h3>").addClass("card-title").text(task.title);
     let cardText = $("<p>").addClass("card-text").text(task.description);
